@@ -1,0 +1,81 @@
+// Global Stylesheet
+
+/*
+Variables
+*/
+
+// Colors
+	$white: #FFFFFF;
+	$gray: #777777;
+	$black: #000000;
+	$sky: #A1ABD5;
+	$blue: #354176;
+	$navy: #151F32;
+	$tan: #D69342;
+	$yellow: #F4BE32;
+
+// Fonts
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700');
+	$font: 'Source Sans Pro', sans-serif;
+
+
+// Base Styles
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: $font;
+		line-height: 1;
+		color: $black;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $blue;
+		opacity: 1;
+		transition: opacity ease 150ms;
+		-webkit-transition: opacity ease 150ms;
+		-moz-transition: opacity ease 150ms;
+		-o-transition: opacity ease 150ms;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.button {
+		background-color: lighten($blue, 20);
+		border: 1px solid $navy;
+		color: $white;
+
+	}
+
+
+/* Imports */
+
+	// External
+		@import "external/_hamburgers";
+
+	// Includes
+		@import "includes/_header";
+		@import "includes/_footer";
+		@import "includes/_sidebar";
+
+	// Templates
+		@import "_page";
+
+	// Pages
+		@import "_front-page";

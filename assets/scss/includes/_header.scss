@@ -1,0 +1,72 @@
+/*
+==============
+Header
+==============
+*/
+
+.site-header {
+	padding: 100px 0 10px 0;
+	position: relative;
+	border-bottom: 1px solid lighten($gray, 40);
+
+	&__brand {
+		position: absolute;
+		z-index: 999;
+		top: -90px;
+		width: 60%;
+	}//.site-header__brand
+
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		height: 100%;
+
+		&_list {
+			margin-bottom: 0px;
+
+			li {
+				display: inline-block;
+				position: relative;
+				margin-right: 60px;
+
+				a {
+					font-size: 18px;
+					padding: 4px;
+				}
+
+				.dropdown-toggle {
+					position: absolute;
+					top: 5px;
+					right: -20px;
+					background-color: transparent;
+					border: none;
+					outline: none;
+					font-size: 20px;
+					cursor: pointer;
+
+					&:hover{
+						&::after {
+							color: $blue;
+						}
+					}//:hover
+				}//.dropdown-toggle
+
+				&:last-child {
+					margin-right: 0px;
+				}
+			}// li
+		}//.site-header__nav_list
+	}//.site-header__nav
+
+}//.site-header__
+
+
+// Banner Image
+	.banner__image {
+		height: 250px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 60px;
+	}

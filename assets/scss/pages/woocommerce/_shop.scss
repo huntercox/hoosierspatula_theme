@@ -1,0 +1,295 @@
+/*
+==============
+Shop ( WooCommerce )
+==============
+*/
+
+.woocommerce {
+
+		&-products-header {
+			margin-left: 0px;
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $lg) {
+				margin-bottom: 0;
+			}
+
+			.page-title {
+				margin-bottom: 0px;
+				border-bottom: 2px solid $red;
+				line-height: 1.4 !important;
+			}
+
+			// HooSpats Logo
+				&__hoospats {
+					&-intro {
+						width: 100%;
+						margin: 0 auto;
+						text-align: center;
+					}
+
+					&-image {
+						display: inline-block;
+
+					}//.woocommerce-products-header__hoospats_image
+
+				}//.woocommerce-products-header__hoospats
+			}//.woocommerce-products-header
+
+
+		// -----------------
+		// Archive Meta
+			&-result-count {
+				display: none;
+				padding-top: 10px;
+			}//.woocommerce-result-count
+
+			&-ordering {
+				display: none;
+				position: absolute;
+				right: 15px;
+
+				.orderby {
+					border: 1px solid lighten($gray, 10);
+					padding-top: 8px;
+				}
+			}//.woocommerce-ordering
+
+
+	&.archive {
+		// -----------------
+		// Products List
+			.products {
+				clear: both;
+				margin-top: 20px;
+				padding-top: 20px;
+				display: flex;
+				justify-content: space-between;
+
+				@media screen and (max-width: $lg) {
+					flex-wrap: wrap;
+					margin-top: 0;
+				}
+				@media screen and (max-width: $sm) {
+					flex-direction: column;
+					justify-content: center;
+				}
+
+				&::before, &::after {
+					display: none !important;
+					content: none;
+				}
+				.product {
+					flex-basis: 24%;
+					margin: 0;
+
+					@media screen and (max-width: $lg) {
+						flex-basis: 48%;
+						margin-bottom: 40px;
+					}
+					@media screen and (max-width: $md) {
+						width: 80%;
+						margin: 0 auto 40px auto;
+						text-align: center;
+					}
+					@media screen and (max-width: 460px) {
+						width: 100%;
+					}
+
+					.woocommerce-loop-product {
+						// product thumb wrap
+							&__image-wrapper {
+								position: relative;
+								overflow: hidden;
+								z-index: 1;
+
+								@media screen and (max-width: $lg) {
+									height: 260px;
+								}
+								@media screen and (max-width: $md) {
+									height: 200px;
+								}
+								@media screen and (max-width: $sm) {
+									height: 280px;
+								}
+								@media screen and (max-width: 460px) {
+									height: 260px;
+								}
+
+								.wp-post-image {
+									width: 100% !important;
+									margin-bottom: 0;
+									opacity: 1;
+									transform: scale(1, 1);
+									@include transition(all, ease-in-out, 120ms);
+
+									@media screen and (max-width: $lg) {
+										position: relative;
+										top: -40px;
+									}
+									@media screen and (max-width: $md) {
+										top: -30px;
+									}
+									@media screen and (max-width: 460px) {
+										top: -20px;
+									}
+								}
+
+								.price {
+									position: absolute;
+									top: 0;
+									z-index: 2;
+									height: 24px;
+									color: $white;
+									background-color: rgba($red, 0.90);
+									@include transition(height, ease-in-out, 120ms);
+
+									@media screen and (max-width: $lg) {
+										height: 38px;
+									}
+									@media screen and (max-width: $md) {
+										height: 32px;
+									}
+									@media screen and (max-width: $sm) {
+										height: 34px;
+									}
+
+									.woocommerce-Price {
+										&-amount {
+											padding: 3px 5px 2px 5px;
+											line-height: 24px;
+											font-size: 16px;
+											font-family: $robotoBold;
+											text-shadow: 1px 1px 0 $black;
+											@include transition(all, ease-in-out, 120ms);
+
+											@media screen and (max-width: $lg) {
+												padding: 3px 10px 2px 10px;
+												line-height: 38px;
+												font-size: 20px;
+											}
+
+											@media screen and (max-width: $md) {
+												font-size: 24px;
+												line-height: 34px;
+												padding: 6px 8px 5px 8px;
+											}
+										}
+										&-currencySymbol {
+											margin-right: 2px;
+										}
+									}//.woocommerce-Price
+								}//.price
+
+								&_callout {
+									opacity: 0;
+									position: absolute;
+									bottom: 0;
+									right: 0;
+									z-index: 2;
+									width: 50%;
+									height: 28px;
+									border: 1px solid rgba($white, 0.95);
+									background-color: rgba($white, 0.95);
+									color: $black;
+									font-size: 12px;
+									font-family: $robotoBold;
+									line-height: 26px;
+									text-align: center;
+									text-transform: uppercase;
+									@include transition(all, ease-in-out, 120ms);
+
+									@media screen and (max-width: $md) {
+										opacity: 0;
+									}
+
+									@media screen and (max-width: $sm) {
+										display: none;
+									}
+								}
+							}//&__image-wrapper
+
+						// product title
+							&__title {
+								font-size: 20px;
+								letter-spacing: 1px;
+								color: darken($red, 17);
+								padding: 0;
+								margin-top: 8px;
+								margin-bottom: 5px;
+								@include transition(color, ease-in-out, 120ms);
+
+								@media screen and (max-width: $lg) {
+									font-size: 24px;
+									margin-bottom: 0;
+								}
+								@media screen and (max-width: $md) {
+									margin-bottom: 10px;
+								}
+								@media screen and (max-width: $sm) {
+									font-size: 28px;
+									margin-top: 10px;
+								}
+							}//.woocommerce-loop-product__title
+
+
+						// link hover-state
+							&__link:hover {
+								.wp-post-image {
+									opacity: 0.85;
+									transform: scale(1.1, 1.1);
+								}
+								.price {
+									height: 32px;
+
+									.woocommerce-Price-amount {
+										padding: 4px 7px 3px 7px;
+										font-size: 20px;
+										line-height: 33px;
+									}
+								}
+								.woocommerce-loop-product__image-wrapper_callout {
+									opacity: 1;
+									border-right-color: lighten($gray, 0.3);
+									border-bottom-color: lighten($gray, 0.3);
+								}
+								.woocommerce-loop-product__title {
+									color: $red;
+								}
+							}
+
+					}//.woocommerce-loop-product (scope)
+
+
+
+					.add_to_cart_button {
+						display: block;
+						border: 1px solid $yellow;;
+						padding: 14px 16px 12px 16px;
+						font-size: 20px;
+						font-family: $roboto;
+						text-align: center;
+						letter-spacing: 0.6px;
+						@include transition(all, ease-in-out, 150ms);
+
+						@media screen and (max-width: $lg) {
+							margin-top: 8px;
+						}
+						@media screen and (max-width: $md) {
+							margin: 0;
+							display: inline-block;
+						}
+
+						&:hover {
+							color: $yellow;
+							background-color: lighten($black, 20);
+							text-shadow: none;
+						}
+
+
+					}//.add_to_cart_button
+
+				}//.product
+			}//.products
+	}//.woocommerce.archive
+}

@@ -7,7 +7,7 @@
 		"uuidString": "65A446EC-E35D-4449-85A9-E67D64339276"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/assets\/css\/editor-style.css": {
 		"aP": 0,
@@ -16,6 +16,26 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/editor-style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/featherlight.gallery.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/featherlight.gallery.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/featherlight.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/featherlight.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -36,313 +56,118 @@
 		"oAP": "\/assets\/css\/global-styles.min.css.map",
 		"oF": 0
 		},
-	"\/assets\/img\/2br.jpg": {
-		"ft": 16384,
-		"iS": 92083,
-		"oA": 0,
-		"oAP": "\/assets\/img\/2br.jpg",
+	"\/assets\/css\/icomoon.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/icomoon-min.css",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oS": 3
 		},
-	"\/assets\/img\/2nd BR closet.jpg": {
-		"ft": 16384,
-		"iS": 30821,
+	"\/assets\/css\/slick-lightbox.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/2nd BR closet.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oAP": "\/assets\/css\/slick-lightbox.min.css",
+		"oF": 3,
+		"oS": 3
 		},
-	"\/assets\/img\/3 BR Kitchen.jpg": {
-		"ft": 16384,
-		"iS": 76144,
-		"oA": 0,
-		"oAP": "\/assets\/img\/3 BR Kitchen.jpg",
+	"\/assets\/css\/slick-lightbox.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/slick-lightbox.min-min.css",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oS": 3
 		},
-	"\/assets\/img\/3br.jpg": {
-		"ft": 16384,
-		"iS": 77180,
-		"oA": 0,
-		"oAP": "\/assets\/img\/3br.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/bathroom.jpg": {
-		"ft": 16384,
-		"iS": 25300,
-		"oA": 0,
-		"oAP": "\/assets\/img\/bathroom.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/equal-housing-opportunity-accessibility.png": {
-		"ft": 32768,
-		"iS": 110150,
-		"oA": 0,
-		"oAP": "\/assets\/img\/equal-housing-opportunity-accessibility.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/IMG_1537 (002)light.jpg": {
-		"ft": 16384,
-		"iS": 154155,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IMG_1537 (002)light.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/IMG_1554 (002)light.jpg": {
-		"ft": 16384,
-		"iS": 99919,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IMG_1554 (002)light.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/IMG_1887 (002).jpg": {
-		"ft": 16384,
-		"iS": 12065,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IMG_1887 (002).jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/IMG_1977.jpg": {
-		"ft": 16384,
-		"iS": 96118,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IMG_1977.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/IMG_2294.jpg": {
-		"ft": 16384,
-		"iS": 158741,
-		"oA": 0,
-		"oAP": "\/assets\/img\/IMG_2294.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/julian-gentilezza-351164.jpg": {
-		"ft": 16384,
-		"iS": 3765794,
-		"oA": 0,
-		"oAP": "\/assets\/img\/julian-gentilezza-351164.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/KDC_Investments,_Inc_.docx": {
+	"\/assets\/fonts\/icomoon.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/img\/KDC_Investments,_Inc_.docx",
+		"oAP": "\/assets\/fonts\/icomoon.eot",
 		"oF": 0
 		},
-	"\/assets\/img\/KDCLogoLarge.jpg": {
-		"ft": 16384,
-		"iS": 56752,
-		"oA": 0,
-		"oAP": "\/assets\/img\/KDCLogoLarge.jpg",
+	"\/assets\/fonts\/icomoon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/icomoon.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/assets\/img\/laundry rm.jpg": {
-		"ft": 16384,
-		"iS": 29030,
-		"oA": 0,
-		"oAP": "\/assets\/img\/laundry rm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/living rm.jpg": {
-		"ft": 16384,
-		"iS": 37767,
-		"oA": 0,
-		"oAP": "\/assets\/img\/living rm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/logo_kdc-square.png": {
-		"ft": 32768,
-		"iS": 53735,
-		"oA": 0,
-		"oAP": "\/assets\/img\/logo_kdc-square.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/sign pic.jpg": {
-		"ft": 16384,
-		"iS": 48687,
-		"oA": 0,
-		"oAP": "\/assets\/img\/sign pic.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/trifold_flyer.pdf": {
+	"\/assets\/fonts\/icomoon.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/img\/trifold_flyer.pdf",
+		"oAP": "\/assets\/fonts\/icomoon.ttf",
 		"oF": 0
 		},
-	"\/assets\/img\/villas_floorplan1.png": {
-		"ft": 32768,
-		"iS": 2922935,
+	"\/assets\/fonts\/icomoon.woff": {
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/img\/villas_floorplan1.png",
+		"oAP": "\/assets\/fonts\/icomoon.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/robotocondensed-bold-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/robotocondensed-bold-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/robotocondensed-bold-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/robotocondensed-bold-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/robotocondensed-regular-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/robotocondensed-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/robotocondensed-regular-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/robotocondensed-regular-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/spyagencyv3expand-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/spyagencyv3expand-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/spyagencyv3expand-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/spyagencyv3expand-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/img\/termly-logo.png": {
+		"ft": 32768,
+		"iS": 2723,
+		"oA": 0,
+		"oAP": "\/assets\/img\/termly-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/villas_floorplan2.png": {
-		"ft": 32768,
-		"iS": 2516115,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_floorplan2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/villas_front1.jpg": {
-		"ft": 16384,
-		"iS": 121987,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_front1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_front2.jpg": {
-		"ft": 16384,
-		"iS": 110932,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_front2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_front3.jpg": {
-		"ft": 16384,
-		"iS": 137855,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_front3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_front4.jpg": {
-		"ft": 16384,
-		"iS": 168231,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_front4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_unit1.jpg": {
-		"ft": 16384,
-		"iS": 87837,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_unit1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_unit2.jpg": {
-		"ft": 16384,
-		"iS": 50151,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_unit2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_unit3.jpg": {
-		"ft": 16384,
-		"iS": 45825,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_unit3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_unit4.jpg": {
-		"ft": 16384,
-		"iS": 56132,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_unit4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/assets\/img\/villas_unit5.png": {
-		"ft": 32768,
-		"iS": 3635324,
-		"oA": 0,
-		"oAP": "\/assets\/img\/villas_unit5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/assets\/img\/walk in closet.jpg": {
-		"ft": 16384,
-		"iS": 26740,
-		"oA": 0,
-		"oAP": "\/assets\/img\/walk in closet.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/js\/global-scripts.js": {
@@ -365,31 +190,65 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/scss\/_front-page.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_front-page-styles.min.css",
+	"\/assets\/js\/home-sliderlightbox.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/home-sliderlightbox.min.js",
 		"oF": 0,
-		"oS": 3,
-		"uL": 1
+		"sC": 3,
+		"tS": 0
 		},
-	"\/assets\/scss\/_page.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_page-styles.min.css",
+	"\/assets\/js\/home-sliderlightbox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/home-sliderlightbox.min.min.js",
 		"oF": 0,
-		"oS": 3,
-		"uL": 1
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/instafeed.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/instafeed.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/slick-lightbox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/slick-lightbox.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/spatulas-gallery.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/spatulas-gallery.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/spatulas-gallery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/spatulas-gallery.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/scss\/external\/_base.scss": {
 		"aP": 1,
@@ -443,7 +302,85 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/assets\/scss\/includes\/_footer.scss": {
+	"\/assets\/scss\/pages\/_contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/css\/_contact-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/pages\/_front-page.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/css\/_front-page-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/pages\/woocommerce\/_cart.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/pages\/css\/_cart-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/pages\/woocommerce\/_checkout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/pages\/css\/_checkout-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/pages\/woocommerce\/_shop.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/pages\/css\/_shop-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/pages\/woocommerce\/_single-product.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/pages\/css\/_single-product-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/parts\/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -456,7 +393,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/assets\/scss\/includes\/_header.scss": {
+	"\/assets\/scss\/parts\/_header.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -469,7 +406,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/assets\/scss\/includes\/_sidebar.scss": {
+	"\/assets\/scss\/parts\/_sidebar.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -478,6 +415,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/css\/_sidebar-styles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/templates\/_page.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/css\/_page-styles.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -555,6 +505,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/assets\/slick\/slick-theme.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/slick\/slick-theme.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/slick\/slick-theme.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick-theme.min.css.map",
+		"oF": 0
+		},
 	"\/assets\/slick\/slick-theme.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -563,8 +530,8 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/assets\/css\/slick-theme-styles.min.css",
-		"oF": 0,
+		"oAP": "\/assets\/slick\/slick-theme.min.css",
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -596,14 +563,31 @@
 		"ie": 1,
 		"iI": 0,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/slick\/slick.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"rU": 0,
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
+		},
+	"\/assets\/slick\/slick.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/slick\/slick.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/slick\/slick.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/slick\/slick.min.css.map",
+		"oF": 0
 		},
 	"\/assets\/slick\/slick.min.js": {
 		"ft": 64,
@@ -623,8 +607,8 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/assets\/css\/slick-styles.min.css",
-		"oF": 0,
+		"oAP": "\/assets\/slick\/slick.min.css",
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -633,33 +617,33 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/front-page.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/functions.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/functions.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/functions\/basic-nav.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/functions\/basic-nav.php",
 		"oF": 0
 		},
 	"\/functions\/bootstrap-nav.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/functions\/bootstrap-nav.php",
 		"oF": 0
 		},
 	"\/functions\/cleanup.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/functions\/cleanup.php",
 		"oF": 0
 		},
@@ -668,20 +652,27 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/functions\/enqueues.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/functions\/limit-output.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/functions\/limit-output.php",
 		"oF": 0
 		},
 	"\/functions\/remove-query-string.php": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/functions\/remove-query-string.php",
+		"oF": 0
+		},
+	"\/functions\/woo-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/functions\/woo-functions.php",
 		"oF": 0
 		},
 	"\/index.php": {
@@ -689,35 +680,42 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/index.php",
-		"oF": 1
+		"oF": 0
+		},
+	"\/page-contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/page-contact.php",
+		"oF": 0
 		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/page.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/parts\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/parts\/footer.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/parts\/header.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/parts\/header.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/parts\/sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/parts\/sidebar.php",
-		"oF": 1
+		"oF": 0
 		},
 	"\/README.md": {
 		"cB": 0,
@@ -764,6 +762,76 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/woocommerce\/archive-product.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/archive-product.php",
+		"oF": 0
+		},
+	"\/woocommerce\/content-product.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/content-product.php",
+		"oF": 0
+		},
+	"\/woocommerce\/content-single-product.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/content-single-product.php",
+		"oF": 0
+		},
+	"\/woocommerce\/global\/wrapper-end.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/global\/wrapper-end.php",
+		"oF": 0
+		},
+	"\/woocommerce\/global\/wrapper-start.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/global\/wrapper-start.php",
+		"oF": 0
+		},
+	"\/woocommerce\/loop\/loop-end.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/loop\/loop-end.php",
+		"oF": 0
+		},
+	"\/woocommerce\/loop\/loop-start.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/loop\/loop-start.php",
+		"oF": 0
+		},
+	"\/woocommerce\/single-product.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/single-product.php",
+		"oF": 0
+		},
+	"\/woocommerce\/single-product\/product-image.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/single-product\/product-image.php",
+		"oF": 0
+		},
+	"\/woocommerce\/single-product\/product-thumbnails.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/woocommerce\/single-product\/product-thumbnails.php",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -772,9 +840,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 536690383,
-	"displayValue": "kdc2018",
+	"displayValue": "hsc2018",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_orange"
+	"iconImageName": "meme-gavin",
+	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -782,7 +851,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
-	"autoprefixerEnableIEGrid": 0,
+	"autoprefixerEnableIEGrid": 1,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -2169,7 +2238,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/kdc.test",
+	"externalServerAddress": "http:\/\/hsc.test",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2577,6 +2646,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
@@ -2752,6 +2822,16 @@
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
+		{
+			"autoOutputAction": 1,
+			"autoOutputPathFilenamePattern": "*.php",
+			"autoOutputPathRelativePath": "",
+			"autoOutputPathReplace1": "",
+			"autoOutputPathReplace2": "",
+			"autoOutputPathStyle": 0,
+			"fileExtension": "php",
+			"shouldRunCacheBuster": 0
+			}
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",

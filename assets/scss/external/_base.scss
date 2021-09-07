@@ -61,9 +61,23 @@
 
   &::before {
     top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+
+		@media screen and (max-width: 460px) {
+			top: ( ($hamburger-layer-spacing - 2px) + $hamburger-layer-height) * -1;
+		}
+		@media screen and (max-width: 375px) {
+			top: ( ($hamburger-layer-spacing - 3px) + $hamburger-layer-height) * -1;
+		}
   }
 
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+
+		@media screen and (max-width: 460px) {
+			bottom: ( ($hamburger-layer-spacing - 2px) + $hamburger-layer-height) * -1;
+		}
+		@media screen and (max-width: 375px) {
+			bottom: ( ($hamburger-layer-spacing - 3px) + $hamburger-layer-height) * -1;
+		}
   }
 }

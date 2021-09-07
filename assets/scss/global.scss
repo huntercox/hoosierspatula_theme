@@ -4,31 +4,97 @@
 Variables
 */
 
+// Media Queries
+	$i5: 320px; // iPhone 5/SE
+	$i6: 375px; // iPhone 6/7/8
+	$sm: 575px;
+	$md: 768px;
+	$lg: 991px;
+	$xl: 1199px;
+
+
 // Colors
-	$white: #FFFFFF;
-	$gray: #777777;
-	$black: #000000;
-	$sky: #A1ABD5;
-	$blue: #354176;
-	$navy: #151F32;
-	$tan: #D69342;
-	$yellow: #F4BE32;
+	$black: #000;
+	$gray: #302D2C;
+	$red: #E6343C;
+	$yellow: #F4BF5C;
+	$white: #EBEBEB;
+
 
 // Fonts
-	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700');
-	$font: 'Source Sans Pro', sans-serif;
+	@font-face {
+	  font-family: 'roboto_condensedregular';
+	  src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+	       url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	$roboto: 'roboto_condensedregular';
 
+
+	@font-face {
+	  font-family: 'roboto_condensedbold';
+	  src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+	       url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	$robotoBold: 'roboto_condensedbold';
+
+
+	@font-face {
+	  font-family: 'spy_agency_expandedexpanded';
+	  src: url('../fonts/spyagencyv3expand-webfont.woff2') format('woff2'),
+	       url('../fonts/spyagencyv3expand-webfont.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	$spyagency: 'spy_agency_expandedexpanded';
+
+
+// -------------------------------------------------
+// Mixins
+	/* @include transition(all,2s,ease-out); */
+		@mixin transition($what: all, $how: ease-in-out, $time: 0.2s) {
+			-webkit-transition: $what $how $time;
+			-moz-transition:    $what $how $time;
+			-ms-transition:     $what $how $time;
+			-o-transition:      $what $how $time;
+			transition:         $what $how $time;
+		}
+
+	// Bootstrap clearfix
+		@mixin clearfix() {
+		  &::after {
+		    display: block;
+		    content: "";
+		    clear: both;
+		  }
+		}
 
 // Base Styles
 	* {
 		margin: 0;
 		padding: 0;
-	}
 
+		&:focus, {
+			outline-color: yellow;
+
+		}
+	}
+	*::selection {
+		background-color: rgba($red, 0.30);
+	}
+	html {
+		background-color: $black;
+	}
 	body {
-		font-family: $font;
+		font-family: $roboto;
+		font-weight: normal !important;
 		line-height: 1;
-		color: $black;
+		color: $white;
+		background-color: $black;
+		overflow-x: hidden;
 	}
 
 	ul {
@@ -38,16 +104,12 @@ Variables
 
 	a {
 		display: block;
-		text-decoration: none;
-		color: $blue;
-		opacity: 1;
-		transition: opacity ease 150ms;
-		-webkit-transition: opacity ease 150ms;
-		-moz-transition: opacity ease 150ms;
-		-o-transition: opacity ease 150ms;
+		color: $red;
+		@include transition(all, ease-in-out, 180ms);
 
 		&:hover {
-			opacity: 0.8;
+			color: $white;
+			text-decoration: none;
 		}
 	}
 
@@ -56,12 +118,415 @@ Variables
 		height: auto;
 	}
 
-	.button {
-		background-color: lighten($blue, 20);
-		border: 1px solid $navy;
-		color: $white;
+	// -------------------------------------
+	// Headings
+		h1, h2, h3,h4,h5,h6 {
+			font-family: $robotoBold;
+		}
 
-	}
+		.page-title {
+			font-size: 52px;
+			font-family: $robotoBold;
+			color: $red;
+			text-shadow: 1px 1px 1px $gray;
+
+			@media screen and (max-width: $md) {
+				font-size: 42px;
+			}
+			@media screen and (max-width: $sm) {
+				font-size: 36px;
+			}
+		}//.page-title
+
+// -------------------------------------
+// Buttons
+	.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .button {
+		background-color: darken($yellow, 10);
+		border: 1px solid darken($yellow, 10);
+		color: $black;
+		border-radius: 0;
+		display: inline-block;
+		@include transition(all, ease-in-out, 150ms);
+
+		&:hover {
+			color: $yellow;
+			background-color: lighten($black, 15);
+			text-decoration: none;
+		}
+
+		&--alt {
+			@extend .button;
+			background-color: lighten($gray, 5);
+			border-color: $red;
+			letter-spacing: 0.5px;
+			color: $white;
+			@include transition(all, ease-in-out, 150ms);
+
+			&:hover {
+				background-color: $gray;
+				color: $red;
+			}
+		}//.button--alt
+	}//.button
+
+
+// -------------------------------------------
+// Forms
+	.form-control {
+		font-size: 16px;
+		color: $black;
+		border-radius: 0;
+		border: 1px solid $white;
+		line-height: 1.5;
+		vertical-align: bottom;
+		padding: 8px 8px 5px 10px;
+		@include transition(all, ease-in-out, 150ms);
+
+		// Placeholders
+			&::-webkit-input-placeholder {
+				font-size: 16px;
+				line-height: 1.5;
+				vertical-align: bottom;
+				color: lighten($gray, 40);
+			}
+			&:-moz-placeholder {
+				font-size: 16px;
+				line-height: 1.5;
+				vertical-align: bottom;
+				color: lighten($gray, 40);
+			}
+			&::-moz-placeholder {
+				font-size: 16px;
+				line-height: 1.5;
+				vertical-align: bottom;
+				color: lighten($gray, 40);
+			}
+			&:-ms-input-placeholder {
+				font-size: 16px;
+				line-height: 1.5;
+				vertical-align: bottom;
+				color: lighten($gray, 40);
+			}
+
+		// on-Focus
+			&:focus {
+				border-color: $red;
+				outline: none;
+				box-shadow: none;
+			}
+	}//.form-control
+
+	.wpcf7 {
+		width: 100%;
+		margin-top: 0px;
+
+		@media screen and (max-width: $sm) {
+			width: 100%;
+		}
+
+		// Span wrap
+			&-form-control-wrap {
+				display: block;
+				margin-bottom: 15px;
+
+				.wpcf7-not-valid-tip {
+					position: relative;
+					top: 6px;
+					text-transform: uppercase;
+				}
+			}//.wpcf7-form-control-wrap
+
+		// Inputs
+			&-form-control {
+				font-size: 18px;
+				line-height: 1.5;
+
+				@media screen and (max-width: 460px) {
+					font-size: 16px;
+					line-height: 1.4;
+				}
+
+				// Placeholders
+					&::-webkit-input-placeholder {
+						font-size: 18px;
+						line-height: 1.5;
+						color: lighten($gray, 40);
+
+						@media screen and (max-width: 460px) {
+							font-size: 16px;
+							line-height: 1.4;
+						}
+					}
+					&:-moz-placeholder {
+						font-size: 18px;
+						line-height: 1.5;
+						color: lighten($gray, 40);
+
+						@media screen and (max-width: 460px) {
+							font-size: 16px;
+							line-height: 1.4;
+						}
+					}
+					&::-moz-placeholder {
+						font-size: 18px;
+						line-height: 1.5;
+						color: lighten($gray, 40);
+
+						@media screen and (max-width: 460px) {
+							font-size: 16px;
+							line-height: 1.4;
+						}
+					}
+					&:-ms-input-placeholder {
+						font-size: 18px;
+						line-height: 1.5;
+						color: lighten($gray, 40);
+
+						@media screen and (max-width: 460px) {
+							font-size: 16px;
+							line-height: 1.4;
+						}
+					}
+
+				// on-Focus
+					&:focus {
+						border-color: $red;
+						outline: none;
+						box-shadow: none;
+					}
+			}//.wpcf7-form-control
+
+		// Checkbox & Label wrap
+			.col-md-9 {
+				padding-right: 0;
+
+				.contact-privacy-policy {
+					.wpcf7-not-valid-tip {
+						position: relative;
+						top: 20px;
+					}
+				}
+			}
+			&-list-item {
+				margin-left: 0;
+				margin-top: 10px;
+				position: relative;
+				width: 100%;
+
+				@media screen and (max-width: $md) {
+					margin-top: 0px;
+				}
+
+				// Text
+					&-label {
+						position: absolute;
+						left: 24px;
+						line-height: 1.3;
+						letter-spacing: normal;
+
+						@media screen and (max-width: $lg) {
+							font-size: 16px;
+							line-height: 1.4;
+						}
+					}
+			}//.wpcf7-list-item
+
+		// Submit Button
+			&-submit {
+				cursor: pointer;
+				display: block;
+				width: 100%;
+				margin-top: 10px;
+				padding: 6px 0px 4px 0px;
+				font-size: 20px;
+				font-family: $robotoBold;
+				letter-spacing: .6px;
+				border: 1px solid $white;
+				box-shadow: -2px 2px 4px $gray;
+				@include transition(all, 150ms, ease-in-out);
+
+				@media screen and (max-width: $md) {
+					margin-top: 16px;
+					font-size: 24px;
+				}
+				@media screen and (max-width: 460px) {
+					margin-top: 22px;
+					padding: 8px 0 6px 0;
+				}
+
+				&:hover {
+					border-color: $white;
+					background-color: $black;
+					box-shadow: 0px 0px 24px rgba($red, .80);
+				}
+				// on-Focus
+					&:focus {
+						border-color: $red;
+						outline: none;
+						box-shadow: none;
+					}
+			}
+
+		// Validation Errors
+			.wpcf7-response-output {
+
+				// Errors
+					&.wpcf7-validation-errors {
+						padding: 30px 0 32px 0;
+						border: 2px solid #f00;
+						background-color:	rgba($red, 0.15);
+						font-size: 20px;
+						line-height: 1;
+						text-align: center;
+					}
+
+				// Success
+					 &.wpcf7-mail-sent-ok {
+						padding: 30px 0 32px 0;
+						border: 2px solid #398f14;
+						background-color:	rgba(#398f14, 0.15);
+						font-size: 20px;
+						line-height: 1;
+						text-align: center;
+					 }
+
+			}//.wpcf7-response-output
+
+			.gdpr-reasons {
+				margin-top: 30px;
+				font-size: 14px;
+				color: lighten($gray, 10);
+
+				@media screen and (max-width: $lg) {
+					font-size: 13px;
+					line-height: 1.2;
+				}
+				@media screen and (max-width: $md) {
+					font-size: 14px;
+					line-height: 1.3;
+				}
+			}//.gdpr-reasons
+
+			.gdpr-links {
+				font-size: 14px;
+				color: lighten($gray, 10);
+
+				@media screen and (max-width: $lg) {
+					font-size: 13px;
+					line-height: 1.2;
+				}
+				@media screen and (max-width: $md) {
+					font-size: 14px;
+					line-height: 1.3;
+				}
+
+				a {
+					display: inline;
+					color: lighten($gray, 25);
+
+					&:hover {
+						color: lighten($gray, 50);
+					}
+				}
+			}//.gdpr-links
+	}//.wpcf7
+
+
+// -------------------------------------------
+// WooCommerce Info Boxes
+	.woocommerce-info {
+		width: 320px;
+		color: lighten($black, 20);
+		background-color: rgba($yellow, 0.90);
+		border: 2px solid $white;
+		border-top: 8px solid $white;
+		padding: 14px 0 13px 0;
+		text-align: center;
+
+		@media screen and (max-width: 460px) {
+			width: 280px;
+		}
+		@media screen and (max-width: $i6) {
+			width: 100%;
+		}
+
+		&::before {
+			content:" ";
+		}
+
+		a {
+			width: 80%;
+			display: block;
+			margin: 6px auto 0 auto;
+			padding: 8px 12px 7px 12px;
+			background-color: lighten($black, 25);
+			border: 2px solid $black;
+			color: $white;
+			font-size: 13px;
+			letter-spacing: 0.5px;
+			@include transition(all, ease-in-out, 150ms);
+
+			&:hover {
+				background-color: $black;
+				color: rgba($yellow, 0.90);
+				border-color: darken($white, 10);
+			}
+		}//a
+	}//.woocommerce-info
+
+// -------------------------------------------
+// WooCommerce Messages
+	.woocommerce-message {
+		color: lighten($black, 20);
+		background-color: rgba($yellow, 0.90);
+		border: 2px solid $white;
+		border-top: 8px solid $white;
+		padding: 14px 0 13px 0;
+		text-align: center;
+		line-height: 40px;
+		font-family: $robotoBold;
+
+
+		&::before {
+			font-size: 24px;
+			top: 16px;
+			color: $black;
+
+			@media screen and (max-width: $md) {
+				display: none;
+			}
+		}
+
+		a.button {
+			position: relative;
+			right: 15px;
+			margin: 10px 15px;
+			padding: 8px 12px 7px 12px;
+			background-color: lighten($black, 25);
+			border: 2px solid $black !important;
+			color: $white;
+			font-size: 13px;
+			letter-spacing: 0.5px;
+			@include transition(all, ease-in-out, 150ms);
+
+			@media screen and (max-width: $sm) {
+				float: none !important;
+				display: block;
+				position: relative;
+				right: 0;
+				width: 60%;
+				margin: 10px auto 0 auto;
+			}
+
+			&:hover {
+				background-color: $black;
+				color: rgba($yellow, 0.90);
+				border-color: darken($white, 10);
+			}
+		}//a
+	}//.woocommerce-message
+
+
 
 
 /* Imports */
@@ -69,13 +534,21 @@ Variables
 	// External
 		@import "external/_hamburgers";
 
-	// Includes
-		@import "includes/_header";
-		@import "includes/_footer";
-		@import "includes/_sidebar";
+	// Parts
+		@import "parts/_header";
+		@import "parts/_footer";
+		@import "parts/_sidebar";
 
 	// Templates
-		@import "_page";
+		@import "templates/_page";
 
 	// Pages
-		@import "_front-page";
+		@import "pages/_front-page";
+		@import "pages/_contact";
+
+		// WooCommerce
+			@import "pages/woocommerce/_shop";
+			@import "pages/woocommerce/_single-product";
+			@import "pages/woocommerce/_cart";
+			@import "pages/woocommerce/_checkout";
+			@import "pages/woocommerce/_order-received";

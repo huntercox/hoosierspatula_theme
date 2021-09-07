@@ -1,0 +1,408 @@
+/*
+==============
+Header
+==============
+*/
+
+.site-header {
+	width: 100vw;
+	display: flex;
+	border-bottom: 1px solid rgba($red, 0.3);
+
+	@media screen and (max-width: $md) {
+		border-bottom-color: darken($red, 40);
+	}
+	@media screen and (max-width: $sm) {
+		border-bottom-color: darken($red, 0);
+	}
+
+	&.page-fallback, &.page-featured-image {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 180px;
+		margin-bottom: 80px;
+
+		@media screen and (max-width: $lg) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: $md) {
+			height: 150px;
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: $sm) {
+			height: 130px;
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: $i6) {
+			height: 110px;
+		}
+	}
+
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 180px;
+		background: linear-gradient(
+			to bottom,
+			rgba($black, .80),
+			rgba($black, .60)
+		);
+
+		@media screen and (max-width: $md) {
+			height: 150px;
+			background: linear-gradient(
+				to bottom,
+				rgba($black, .85),
+				rgba($black, .70)
+			);
+		}
+	}
+
+	// -----------------
+	// Logo
+		&__brand {
+			max-width: 320px;
+			position: absolute;
+			z-index: 2;
+			top: 20px;
+			left: 4vw;
+			transform: scale(1);
+			@include transition(transform, ease-in-out, 150ms);
+
+			@media screen and (max-width: $lg) {
+				top: 24px;
+				left: 30px;
+				max-width: 300px;
+			}
+			@media screen and (max-width: $md) {
+				top: 20px;
+				left: 15px;
+				max-width: 250px;
+			}
+			@media screen and (max-width: $sm) {
+				top: 15px;
+				left: 10px;
+				max-width: 220px;
+			}
+			@media screen and (max-width: $i6) {
+				top: 14px;
+				max-width: 180px;
+			}//mq-$i6
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}//.site-header__brand
+
+
+// -------------------------------------------
+	// Cart
+		.woo-cart {
+			&__wrap {
+				display: block;
+				position: absolute;
+				top: 40px;
+				right: 38px;
+				z-index: 2;
+
+				&.no-items {
+					@media screen and (max-width: $md) {
+						top: 22px;
+						right: 25px;
+					}
+					@media screen and (max-width: $sm) {
+						top: 18px;
+						right: 30px;
+					}
+					@media screen and (max-width: 460px) {
+						top: 22px;
+						right: 12px;
+					}
+					@media screen and (max-width: $i6) {
+						top: 13px;
+					}
+				}//&.no-items
+
+				&.has-items {
+					@media screen and (max-width: $md) {
+						top: 22px;
+						right: 20px;
+					}
+					@media screen and (max-width: $sm) {
+						right: 26px;
+					}
+					@media screen and (max-width: 460px) {
+						right: 9px;
+					}
+					@media screen and (max-width: $i6) {
+						top: 13px;
+						right: 10px;
+					}
+				}//&.has-items
+			}//.woo-cart__wrap
+
+			&__contents {
+				color: $white;
+				background-color: rgba($red, .30);
+				border: 2px solid rgba($red, .75);
+				border-radius: 4px;
+				padding: 12px 14px;
+				@include transition(border-color, ease-in-out, 150ms);
+
+				@media screen and (max-width: $md) {
+					background-color:	transparent;
+					border: none;
+				}
+
+				&::before {
+					content: "\e902";
+					color: rgba($yellow, 1);
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 900;
+					font-family: "icomoon";
+					text-shadow: 1px 1px 1px lighten($black, 10);
+					margin-top: 10px;
+					padding-right: 5px;
+					vertical-align: bottom;
+
+					@media screen and (max-width: $lg) {
+						font-size: 22px
+					}
+					@media screen and (max-width: $md) {
+						font-size: 28px;
+					}
+					@media screen and (max-width: $sm) {
+						font-size: 24px;
+					}
+					@media screen and (max-width: 460px) {
+						font-size: 20px;
+					}
+					@media screen and (max-width: $i6) {
+						font-size: 18px;
+					}
+				}
+				&:hover {
+					text-decoration: none;
+					color: $white;
+					border-color:	$yellow;
+
+					@media screen and (max-width: $i5) {
+						background-color: transparent;
+					}
+				}
+			}//.woo-cart__contents
+
+			&__count {
+				text-shadow: 1px 1px 1px lighten($black, 10);
+				font-size: 20px;
+				font-size: $robotoBold;
+				margin-left: 6px;
+
+				@media screen and (max-width: $md) {
+					font-size: 22px;
+					margin-left: 4px;
+				}
+				@media screen and (max-width: 460px) {
+					font-size: 18px;
+				}
+				@media screen and (max-width: $i6) {
+					margin-left: 3px;
+				}
+			}//.woo-cart__count
+		}//.woo-cart
+
+
+// -------------------------------------------
+	// Mobile Nav Toggle
+		&__mobile-nav-toggle {
+			display: none;
+
+			@media screen and (max-width: $md) {
+				display: inline-block;
+				position: absolute;
+				right: 36px;
+				top: 90px;
+				border: none;
+				opacity: 1;
+				@include transition(opacity, ease-in-out, 150ms);
+			}
+			@media screen and (max-width: $sm) {
+				top: 75px;
+				right: 35px;
+			}
+			@media screen and (max-width: 460px) {
+				top: 77px;
+				right: 23px;
+			}
+			@media screen and (max-width: $i6) {
+				top: 60px;
+				right: 20px;
+				width: 40px;
+				background-color: rgba($black, 0.4);
+			}
+
+			&:hover {
+				color: $yellow;
+			}
+
+			.hamburger {
+				padding: 0 !important;
+
+				@media screen and (max-width: $i6) {
+					margin-left: 4px;
+				}
+
+				&:hover {
+					opacity: 1 !important;
+				}
+				&:focus {
+					outline: none;
+					border: none;
+				}
+
+				.hamburger-box {
+					margin-top: 3px;
+
+					@media screen and (max-width: 460px) {
+						width: 32px;
+					}
+					@media screen and (max-width: $i6) {
+						height: 24px;
+						margin-top:	5px;
+						margin-bottom: 2px;
+					}
+					// all 3 bars
+						.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+							background-color: darken($red, 8);
+
+							@media screen and (max-width: $sm) {
+								width: 38px;
+								height:	4px;
+							}
+							@media screen and (max-width: 460px) {
+								width: 32px;
+								height: 3px;
+							}
+						}
+				}//.hamburger-box
+			}//.hamburger--spin
+		}//.site-header__mobile-nav-toggle
+
+
+
+	// -----------------
+	// Nav
+		&__nav {
+			text-align: right;
+			margin-bottom: 0px;
+			position: absolute;
+			right: 40px;
+			top: 130px;
+			z-index: 2;
+
+			// MOBILE NAV - SLIDE OUT
+				@media screen and (max-width: $md) {
+					box-shadow: -4px 4px 16px rgba($gray, .75);
+					background-color: rgba($black, 0.84);
+					border: 1px solid $red;
+					border-right: none;
+					text-align: left;
+					position: absolute;
+					z-index: 6;
+					top: 150px;
+					left: auto;
+					right: 0px;
+					width: 240px;
+					display: none;
+					transform: translateX(100vw);
+					@include transition(transform, ease, 400ms);
+				}
+				@media screen and (max-width: $sm) {
+					top: 144px;
+					border-color: darken($red, 20);
+				}
+				@media screen and (max-width: 460px) {
+					top: 144px;
+				}
+				@media screen and (max-width: $i6) {
+					top: 114px;
+				}
+
+				// Slide Animation
+					&.slide {
+						transform: translateX(10vw);
+					}
+
+
+			&_list {
+				display: inline-block;
+
+				@media screen and (max-width: $md) {
+					display: block;
+					margin: 30px auto;
+				}
+
+				li {
+					display: inline-block;
+					position: relative;
+					margin-right: 50px;
+
+					@media screen and (max-width: $md) {
+						display: block;
+						padding-right: 26px;
+						padding-left: 15px;
+						margin: 20px auto 24px 20px;
+					}
+
+					a {
+						color: $white;
+						font-size: 20px;
+						letter-spacing: .6px;
+						text-shadow: 1.5px 1.5px 2px $black;
+						border-bottom: 2px solid transparent;
+						padding: 6px 0 5px 0;
+
+						@media screen and (max-width: $lg) {
+							font-size: 20px;
+						}
+						@media screen and (max-width: $md) {
+							font-size: 22px;
+						}
+
+						&:hover {
+							color: darken($white, 4);
+							border-bottom-color: rgba($red, .80);
+
+							@media screen and (max-width: $md) {
+								border-bottom-color: transparent;
+								color: $red;
+							}
+						}
+					}
+
+				// Hide "Cart" link until mobile size
+					&:first-child {
+						display: none;
+
+						@media screen and (max-width: $md) {
+							display: block;
+						}
+					}
+					&:last-child {
+						margin-right: 0px;
+
+						@media screen and (max-width: $md) {
+							margin-right: 15px;
+						}
+					}
+				}// li
+			}//.site-header__nav_list
+		}//.site-header__nav
+
+
+}//.site-header__

@@ -37,7 +37,13 @@
 
 // Register - Global Nav
 	function basic_nav() {
-	  register_nav_menu('basic-nav-menu',__( 'Basic Nav' ));
+	  register_nav_menus(
+			array(
+				'basic-nav-menu' => __( 'Header - Nav Menu' ),
+				'footer-nav-menu' => __( 'Footer - Nav Menu' ),
+				'bottom-links' => __( 'Footer - Policies' )
+			)
+		);
 	}
 	add_action( 'init', 'basic_nav' );
 ?>

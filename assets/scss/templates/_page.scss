@@ -1,0 +1,146 @@
+/*
+================
+Page Template
+================
+*/
+
+
+
+/*
+----------
+Content
+----------
+*/
+.page {
+
+	.content article.page {
+
+		>	header {
+			margin-bottom: 30px;
+			border-bottom: 2px solid darken($red, 30);
+
+			@media screen and (max-width: $lg) {
+				margin-left: 0;
+			}
+			@media screen and (max-width: $sm) {
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+
+			h1 {
+				@extend .page-title;
+				letter-spacing: 1px;
+				margin-bottom: 0;
+				text-shadow: 1px 1px 0 rgba($yellow, 0.80);
+
+				@media screen and (max-width: $sm) {
+					text-shadow: 0 0 0 transparent;
+				}
+			}
+		}// header
+
+		// WYSIWYG
+			h3, h4, h5, h6 {
+				letter-spacing: 1px;
+			}
+
+			h3 {
+				color: $yellow;
+
+				@media screen and (max-width: $lg) {
+					line-height: 1.3;
+				}
+				@media screen and (max-width: $md) {
+					line-height: 1.2;
+					font-size: 25px;
+				}
+				@media screen and (max-width: $sm) {
+					font-size: 20px;
+				}
+			}//h3
+
+			>	p {
+					font-size: 20px;
+					line-height: 1.4;
+
+					@media screen and (max-width: $lg) {
+						font-size: 18px;
+					}
+					@media screen and (max-width: $md) {
+						font-size: 17px;
+						line-height: 1.3;
+					}
+					@media screen and (max-width: $sm) {
+						font-size: 15px;
+						line-height: 1.5;
+					}
+				}//p
+
+		// Termly.io External link
+			.termly {
+				&__policy-page {
+					display: flex;
+					justify-content: center;
+					margin-top: 40px;
+
+					@media screen and (max-width: $i6) {
+						justify-content: flex-start;
+					}
+				}//.__policy-page
+
+				&__link {
+					color: $white;
+					font-size: 32px;
+					border-bottom:	3px solid $black;
+					padding-bottom: 5px;
+					@include transition(border-bottom, ease-in-out, 150ms);
+
+					@media screen and (max-width: $md) {
+						font-size: 24px;
+					}
+					@media screen and (max-width: $sm) {
+						font-size: 20px;
+					}
+					@media screen and (max-width: 460px) {
+						font-size: 17px;
+					}
+					@media screen and (max-width: $i6) {
+						font-size: 15px;
+					}
+					@media screen and (max-width: $i5) {
+						font-size: 14px;
+					}
+
+					&:hover {
+						border-bottom-color: #3FA2D2;
+					}
+				}//.__link
+
+				&__logo {
+					position: relative;
+					top: -4px;
+					right: -2px;
+
+					@media screen and (max-width: $md) {
+						width: 120px;
+						top: -3px;
+					}
+					@media screen and (max-width: $sm) {
+						width: 90px;
+						top: -2px;
+					}
+					@media screen and (max-width: 460px) {
+						width: 80px;
+						top: -1px;
+					}
+					@media screen and (max-width: $i6) {
+						width: 70px;
+						top: -1px;
+					}
+				}//.__logo
+
+			}//.termly
+
+	}//.content
+
+}//.page
